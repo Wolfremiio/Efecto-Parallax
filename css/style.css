@@ -1,1 +1,18 @@
 /* PROPIEDADES GENERALES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+
+}
+body{
+    min-height: 100vh;
+    overflow-x:hidden;
+    background: linear-gradient(0deg, rgba(207,224,255,1) 0%, rgb(16, 180, 235)100%);
+
+}
+
+/* HEADER */
+
