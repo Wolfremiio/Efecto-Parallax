@@ -1,17 +1,17 @@
 let header = document.getElementById("header");
 
-let nube1 = document.createElement("nube1");
-let fondo_transparente = document.createElement("fondo_transparente");
-let nube2 = document.createElement("nube2");
-let btn = document.createElement("btn");
-let fondo = document.createElement("fondo");
-let viento = document.createElement("viento");
-let persona = document.createElement("persona");
-let slogan = document.createElement("slogan");
+let nube1 = document.getElementById("nube1");
+let fondo_transparente = document.getElementById("fondo_transparente");
+let nube2 = document.getElementById("nube2");
+let slogan = document.getElementById("slogan");
+let btn = document.getElementById("btn");
+let viento = document.getElementById("viento");
+let persona = document.getElementById("persona");
 
 window.addEventListener("scroll", function () {
   let value = window.scrollY;
-  fondo_transparente.style.left = value * "0.7" + "px";
+
+  fondo_transparente.style.marginLeft = value * 0.7 + "px";
   nube1.style.left = value * -5 + "px";
   nube2.style.left = value * -5 + "px";
   btn.style.marginTop = value * 0.7 + "px";
@@ -25,6 +25,6 @@ window.addEventListener("scroll", function () {
 
 const navigation = document.querySelector("nav");
 document.querySelector(".menu").onclick = function () {
-  this.classlist.toggle("active");
+  this.classList.toggle("active");
   navigation.classList.toggle("active");
 };
