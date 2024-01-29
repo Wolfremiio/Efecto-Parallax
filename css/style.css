@@ -154,3 +154,50 @@ color: #fff;
 }
 
 /* RESPONSIVE PART */
+
+@media(max-width:991px){
+    .sec{
+        padding: 60px ;
+         
+    }
+    .sec p{
+        font-size: 1em;
+    }
+
+    header .menulist{
+ opacity: 0;
+    }
+    nav ul{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav.active ul{
+       position: relative;
+       top: 50px;
+       margin-left: -150px;
+       display: flex;
+       opacity: 1;
+       visibility: visible;
+
+    }
+    header .menu{
+        position:absolute;
+        right: 40px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-image: url('../images/lista.svg');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    header .menu.active{
+        background-image: url('../images/close.svg');
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
